@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.heading {
+    color: black;
+    font-size: 20px;
+    padding-left: 40px;
+    font-family: Sans-Serif;
+}
+
+.bg-container {
+    background-image: url("https://i.ibb.co/fHSs75b/blue-art.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 300vh;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.card-item {
+    border-radius: 2px;
+    background-color: white;
+    height: 55%;
+    width:240px;
+}
+
+.title-box {
+    margin: 20px;
+}
+
+.button {
+    color: white;
+    background-color: #50F539;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    border-width: 0px;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+}
+
+.vl {
+    border-left: 0px solid;
+    height: 35%;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    margin-left: 60px;
+}
+
+.pre {
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="heading">To-Do List web App</h1>
+            </div>
+            <div class="bg-container">
+                <div class="card-item">
+                    <input type="text" class="title-box" placeholder="Title">
+                    <form class="title-box">
+                        <textarea rows="8" cols="22">
+                                    description  
+                                </textarea>
+                        <div class="icon-container">
+                            <button class="button">save</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="vl">
+            <pre><a class="pre">Title</a>                             <a class="pre">description</a>                                            <a class="pre">delete</a></pre>
+            <hr>
+            <input type="text" placeholder="Title" style="height: 45px;" size="105">
+            <br><br>
+            <input type="text" placeholder="Title" style="height: 50px;" size="105">
+        </div>
+    </div>
+</body>
+</html>
